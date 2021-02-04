@@ -13,7 +13,7 @@ import java.io.Serializable
 class HeaderView//Avoid pass null in the root it ignores spaces in the child layout
 (context: Context?) : PDFView(context),Serializable {
 
-    var companyName: String? = null
+    var companyName: CharSequence ? = null
         set(value) {
             field = value
             view.companyName.text = value
